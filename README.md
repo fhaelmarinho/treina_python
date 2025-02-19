@@ -1,86 +1,37 @@
-# Treina_Python (Jogo da Forca)
-### Lista de Atividades e Desafios para Meus Alunos de Programação - Prof. Rafael Marinho
+## Lista de Atividades e Desafios para Meus Alunos de Programação - Prof. Rafael Marinho
 
-O jogo da forca é um jogo de adivinhação onde o jogador tenta adivinhar uma palavra, letra por letra, antes de cometer um número máximo de erros.
+Este repositório contém uma lista de atividades e desafios em Python, projetados para ajudar alunos a praticar e aprimorar suas habilidades de programação. Cada atividade tem objetivos educacionais claros, que visam desenvolver conceitos fundamentais de programação, lógica e resolução de problemas.
 
-### Passo 1: Importar bibliotecas necessárias:
-```
-import random
-```
+## Lista de Atividades
+### 1. Calculadora de IMC
+Descrição: Crie um programa que calcula o Índice de Massa Corporal (IMC) e classifica o resultado com base nas diretrizes da OMS.
 
-__Explicação__: A biblioteca ```random``` será usada para escolher uma palavra aleatória de uma lista de palavras.
+Objetivos Educacionais:
 
-### Passo 2: Definir a lista de palavras
-```
-palavras = ["python", "programacao", "desenvolvimento", "computador", "algoritmo"]
-```
-__Explicação__: Aqui definimos uma lista de palavras que serão usadas no jogo. O jogador terá que adivinhar uma dessas palavras.
+Praticar o uso de funções em Python.
 
-### Passo 3: Escolher uma palavra aleatória da lista
-```
-palavra_secreta = random.choice(palavras)
-```
-__Explicação__: ```random.choice()``` seleciona uma palavra aleatória da lista ```palavras```, depois a variável ```palavra_secreta``` recebe a palavra selecionada.
+Aprender a trabalhar com entradas do usuário e operações matemáticas.
 
-### Passo 4: Inicializar variáveis
-```
-letras_corretas = ['_' for letra in palavra_secreta]
-tentativas_restantes = 6
-letras_erradas = []
-```
- __Explicação__: 
+Entender estruturas condicionais (``` if ```, ```elif```, ```else```).
 
-```letras_corretas```: Inicializamos uma lista com underscores (```_```) para representar cada letra da palavra secreta. Conforme o jogador acerta as letras, os underscores serão substituídos pelas letras corretas.
+### 2. Jogo da Forca
+Descrição: Implemente um jogo da forca onde o jogador tenta adivinhar uma palavra secreta, letra por letra.
 
-```tentativas_restantes```: Definimos o número máximo de tentativas que o jogador pode errar antes de perder o jogo.
+Objetivos Educacionais:
 
-```letras_erradas```: Uma lista para armazenar as letras que o jogador já tentou e que não estão na palavra secreta.
+Trabalhar com listas, strings e dicionários.
 
-### Passo 5: Loop principal do jogo
-```
-while tentativas_restantes > 0 and '_' in letras_corretas:
-      print("\nPalavra: " + " ".join(letras_corretas))
-      print("Letras erradas: " + ", ".join(letras_erradas))
-      print(f"Tentativas restantes: {tentativas_restantes}")
-      tentativa = input("Digite uma letra: ").lower()
-```
-__Explicação__: 
+Praticar loops (```while```) e estruturas condicionais.
 
-O loop continua enquanto o jogador ainda tem tentativas restantes e ainda há underscores na lista ```letras_corretas``` (ou seja, a palavra ainda não foi completamente adivinhada).
+Desenvolver habilidades de depuração e teste de código.
 
-Mostramos a palavra atual com os underscores e as letras já adivinhadas.
-Mostramos as letras que o jogador já tentou e que estão erradas.
-Solicitamos ao jogador que digite uma letra.
+### 3. Gerador de Senhas
+Descrição: Desenvolva um programa que gera senhas aleatórias com base no comprimento e tipos de caracteres escolhidos pelo usuário.
 
+Objetivos Educacionais:
 
-### Passo 6: Verificar se a letra está na palavra secreta
-    if tentativa in palavra_secreta:
-        print("Letra correta!")
-        for i, letra in enumerate(palavra_secreta):
-            if letra == tentativa:
-                letras_corretas[i] = tentativa
-    else:
-        print("Letra errada!")
-        letras_erradas.append(tentativa)
-        tentativas_restantes -= 1
+Trabalhar com a biblioteca ```random``` e manipulação de strings.
 
-__Explicação__:
+Praticar a criação de funções reutilizáveis.
 
-Se a letra digitada pelo jogador estiver na palavra secreta, atualizamos a lista ```letras_corretas``` para revelar a posição da letra na palavra.
-Se a letra não estiver na palavra secreta, adicionamos a letra à lista ```letras_erradas``` e decrementamos o número de tentativas restantes.      
-
-### Passo 7: Verificar se o jogador ganhou ou perdeu
-```
-if '_' not in letras_corretas:
-    print("\nParabéns! Você ganhou! A palavra era: " + palavra_secreta)
-else:
-    print("\nVocê perdeu! A palavra era: " + palavra_secreta)
-```
-__Explicação__:
-
-Se não houver mais underscores na lista ```letras_corretas```, significa que o jogador adivinhou todas as letras e ganhou o jogo.
-Caso contrário, o jogador perdeu e mostramos a palavra secreta.
-
-
-
-    
+Entender a importância de segurança em senhas.
