@@ -1,7 +1,3 @@
-Aqui está o passo a passo em **Markdown** para o código do gerador de senhas:
-
----
-
 ## Passo a Passo do Gerador de Senhas
 
 ### 1. **Importar as bibliotecas necessárias**
