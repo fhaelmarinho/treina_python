@@ -1,7 +1,3 @@
-Aqui está o passo a passo em **Markdown** para o código do jogo da forca:
-
----
-
 ## Passo a Passo do Jogo da Forca
 
 ### 1. **Importar a biblioteca `random`**
