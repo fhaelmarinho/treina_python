@@ -41,5 +41,5 @@ Descrição: Desenvolva um programa que identifica através do input se o ano é
 
 Objetivos Educacionais:
 
-Trabalhar com ``ìf``, ``èlif`` e ```else```
-Praticar os operadores de comparação ```=```e ```!=```
+Trabalhar com ``ìf``, ``elif`` e ```else```
+Praticar os operadores de comparação ```<```, ```>```, ```=``` e ```!=```
