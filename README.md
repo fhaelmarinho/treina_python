@@ -35,3 +35,11 @@ Trabalhar com a biblioteca ```random``` e manipulação de strings.
 Praticar a criação de funções reutilizáveis.
 
 Entender a importância de segurança em senhas.
+
+### 4. Ano Bisexto
+Descrição: Desenvolva um programa que identifica através do input se o ano é bisexto ou ano comum.
+
+Objetivos Educacionais:
+
+Trabalhar com ``ìf``, ``elif`` e ```else```
+Praticar os operadores de comparação ```<```, ```>```, ```=``` e ```!=```
