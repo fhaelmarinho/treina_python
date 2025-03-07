@@ -19,7 +19,7 @@ for secao in secoes:
         
         print(secao)
         linha()
-        
+
 
 
 
