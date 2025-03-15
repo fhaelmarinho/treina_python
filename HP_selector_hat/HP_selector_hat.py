@@ -67,3 +67,15 @@ print("🦁 Gryffindor", gryffindor)
 print("🦅 Ravenclaw", ravenclaw)  
 print("🦡 Hufflepuff", hufflepuff)  
 print("🐍 Slytherin", slytherin)
+
+max_score = max(gryffindor, ravenclaw, hufflepuff, slytherin)
+
+print("\nYour house is:")
+if gryffindor == max_score:
+    print("🦁 Gryffindor")
+if ravenclaw == max_score:
+    print("🦅 Ravenclaw")
+if hufflepuff == max_score:
+    print("🦡 Hufflepuff")
+if slytherin == max_score:
+    print("🐍 Slytherin")
