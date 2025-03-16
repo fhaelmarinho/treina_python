@@ -43,3 +43,10 @@ Objetivos Educacionais:
 
 Trabalhar com ``ìf``, ``elif`` e ```else```
 Praticar os operadores de comparação ```<```, ```>```, ```=``` e ```!=```
+
+### 5. HP Chapeu Seletor de Hogwarts
+Descrição: Este programa é uma simulação simples do Chapéu Seletor de Hogwarts, famoso no universo de Harry Potter. O objetivo é ajudar os usuários a descobrir qual seria sua casa em Hogwarts (Grifinória, Corvinal, Lufa-Lufa ou Sonserina) com base nas respostas fornecidas a um conjunto de perguntas. 
+
+Objetivos Educacionais:
+
+Este programa serve como um excelente exemplo prático para quem está aprendendo Python. Ele demonstra conceitos fundamentais, como entrada de dados (`input()`), estruturas condicionais (`if`, `elif`, `else`) e manipulação de variáveis.
