@@ -11,6 +11,5 @@ def verificador_ano_bissexto():
             break    
         else:
             print("NÃO")
-
 # Chama a função
 verificador_ano_bissexto()
